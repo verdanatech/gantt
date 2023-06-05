@@ -22,13 +22,13 @@
  * You should have received a copy of the GNU General Public License
  * along with gantt. If not, see <http://www.gnu.org/licenses/>.
  * -------------------------------------------------------------------------
- * @copyright Copyright (C) 2013-2022 by gantt plugin team.
+ * @copyright Copyright (C) 2013-2023 by gantt plugin team.
  * @license   GPLv2 https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://github.com/pluginsGLPI/gantt
  * -------------------------------------------------------------------------
  */
 
-define('PLUGIN_GANTT_VERSION', '1.0.2');
+define('PLUGIN_GANTT_VERSION', '1.0.4');
 
 // Minimal GLPI version, inclusive
 define("PLUGIN_GANTT_MIN_GLPI_VERSION", "10.0.1");

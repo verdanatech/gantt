@@ -22,7 +22,7 @@
  * You should have received a copy of the GNU General Public License
  * along with gantt. If not, see <http://www.gnu.org/licenses/>.
  * -------------------------------------------------------------------------
- * @copyright Copyright (C) 2013-2022 by gantt plugin team.
+ * @copyright Copyright (C) 2013-2023 by gantt plugin team.
  * @license   GPLv2 https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://github.com/pluginsGLPI/gantt
  * -------------------------------------------------------------------------
@@ -63,6 +63,16 @@ class TaskDAO
             'is_milestone' => ($task->type == "milestone") ? 1 : 0
         ];
 
+        if ($parentTask != null) {
+            $input['entities_id'] = $parentTask->fields["entities_id"];
+            $input['is_recursive'] = $parentTask->fields["is_recursive"];
+        } else {
+            $p = new \Project();
+            $p->getFromDB($projectId);
+            $input['entities_id'] = $p->fields["entities_id"];
+            $input['is_recursive'] = $p->fields["is_recursive"];
+        }
+
         $newTask = new \ProjectTask();
         $newTask->add($input);
         return $newTask;
@@ -77,14 +87,19 @@ class TaskDAO
             throw new \Exception(__('Not enough rights', 'gantt'));
         }
 
-        $t->update([
+        $update = [
             'id' => $task->id,
             'plan_start_date' => $task->start_date,
             'plan_end_date' => $task->end_date,
             'percent_done' => ($task->progress * 100),
-            'name' => $task->text ?? $t->fields['name'],
-            'is_milestone' => ($task->type == "milestone") ? 1 : 0
-        ]);
+            'name' => $task->text ?? $t->fields['name']
+        ];
+
+        if (isset($task->type)) {
+            $update['is_milestone'] = ($task->type == "milestone") ? 1 : 0;
+        }
+
+        $t->update($update);
         return true;
     }
 
