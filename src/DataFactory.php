@@ -56,7 +56,8 @@ class Datafactory
                     'show_on_global_gantt' => 1,
                     'is_template' => 0,
                     'is_deleted' => 0
-                ] + getEntitiesRestrictCriteria('glpi_projects', '', '', true)
+                ] + getEntitiesRestrictCriteria('glpi_projects', '', '', true),
+                'ORDERBY' => 'glpi_projects.plan_start_date'
             ]);
             foreach ($iterator as $data) {
                  $this->getItemsForProject($itemArray, $data['id']);
@@ -186,8 +187,8 @@ class Datafactory
         $item->type = ($type == "root-project") ? "project" : $type;
         $item->parent = ($type == "root-project") ? 0 : (($type == "project") ? $record['projects_id'] : ($record["projecttasks_id"] > 0 ? $parentTaskUid : $record['projects_id']));
         $item->linktask_id = ($item->type != "project") ? $record["id"] : 0;
-        $item->start_date = $record['plan_start_date'] ?? $_SESSION['glpi_currenttime'];
-        $item->end_date = $record['plan_end_date'] ?? date('Y-m-d H:i:s', strtotime($item->start_date . ' + 1 day'));
+        $item->start_date = $record['real_start_date'] ?? $record['plan_start_date'] ?? $_SESSION['glpi_currenttime'];
+        $item->end_date = $record['real_end_date'] ?? $record['plan_end_date'] ?? date('Y-m-d H:i:s', strtotime($item->start_date . ' + 1 day'));
         $item->text = $record['name'];
         $item->content = isset($record['content']) ? RichText::getSafeHtml($record['content']) : "";
         $item->comment = $record['comment'] ?? "";

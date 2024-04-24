@@ -2,7 +2,7 @@
    <name>gantt</name>
    <key>gantt</key>
    <state>stable</state>
-   <logo>https://raw.githubusercontent.com/pluginsGLPI/gantt/master/gantt.png</logo>
+   <logo>https://raw.githubusercontent.com/pluginsGLPI/gantt/main/gantt.png</logo>
    <description>
       <short>
          <en>gantt GLPI plugin.</en>
@@ -21,6 +21,11 @@
       <author>Teclib'</author>
    </authors>
    <versions>
+      <version>
+         <num>1.1.0</num>
+         <compatibility>^10.0.1</compatibility>
+         <download_url>https://github.com/pluginsGLPI/gantt/releases/download/1.1.0/glpi-gantt-1.1.0.tar.bz2</download_url>
+      </version>
       <version>
          <num>1.0.4</num>
          <compatibility>^10.0.1</compatibility>
