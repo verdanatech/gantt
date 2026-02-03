@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.3.2] - 2026-01-12
+
+### Fixed
+
+- Updates translations
+
+## [1.3.1] - 2025-12-22
+
+### Fixed
+
+- Fix global GANTT button link
+- Fix Today marker position on native calendar fields
+
 ## [1.3.0] - 2025-12-02
 
 ### Added
