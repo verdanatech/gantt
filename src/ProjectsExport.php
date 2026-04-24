@@ -33,14 +33,11 @@
 
 namespace GlpiPlugin\Gantt;
 
-final class ProjectsExport
-{
-    private int $project_id;
+use function Safe\json_encode;
 
-    public function __construct(int $project_id)
-    {
-        $this->project_id = $project_id;
-    }
+final readonly class ProjectsExport
+{
+    public function __construct(private int $project_id) {}
 
     private function loadProjectsData(): array
     {
@@ -69,6 +66,7 @@ final class ProjectsExport
                     } else {
                         $id_refs[$item->parent]['projects'][] = &$id_refs[$item->id];
                     }
+
                     break;
                 case 'task':
                     $task = [
