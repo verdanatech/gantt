@@ -4,11 +4,12 @@
   "private": true,
   "license": "GPL-2.0-or-later",
   "dependencies": {
-    "dhtmlx-gantt": "^9.1.3"
+    "dhtmlx-gantt": "^9.1.4"
   },
   "scripts": {
     "build": "webpack --config .webpack.config.js",
-    "postinstall": "npm run-script build"
+    "postinstall": "npm run-script build",
+    "test": "jest --colors"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
@@ -16,7 +17,7 @@
     "file-loader": "^6.2.0",
     "script-loader": "^0.7.2",
     "style-loader": "^4.0.0",
-    "webpack": "^5.105.4",
-    "webpack-cli": "^7.0.2"
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
   }
 }
