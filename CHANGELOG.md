@@ -1,0 +1,92 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
+and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [1.3.5] - 2026-10-06
+
+### Changed
+
+- Upgraded dhtmlx-gantt to v10.
+
+### Added
+
+- Added Playwright e2e tests covering the Gantt view (render, today highlight, drag and drop with rollback).
+
+### Fixed
+
+- CI: fix Psalm cache directory, drop the stray `glpi-project/tools` composer dependency, declare a unique composer autoloader suffix
+
+## [1.3.4] - 2026-08-04
+
+### Added
+
+- Added a Jest test detecting dhtmlx-gantt upgrades that break the Gantt view.
+
+### Fixed
+
+- Fixed missing rights checks on task/project creation and on task links, and unescaped text in the Gantt tooltip.
+
+## [1.3.3] - 2026-04-22
+
+### Fixed
+
+- Fixed the task tooltip display in the Gantt view when the comment or the description of the task is too big.
+- Fix the progress percentage of tasks and projects in the Gantt view when it must not be calculated automatically
+- Project progress calculation now includes subtasks, aligning with core GLPI behavior.
+
+### Added
+
+- Add icon parameter to createTabEntry for Project tab
+
+## [1.3.2] - 2026-01-12
+
+### Fixed
+
+- Updates translations
+
+## [1.3.1] - 2025-12-22
+
+### Fixed
+
+- Fix global GANTT button link
+- Fix Today marker position on native calendar fields
+
+## [1.3.0] - 2025-12-02
+
+### Added
+
+- Add `Today` marker
+
+## [1.2.0] - 2025-09-30
+
+### Added
+
+- GLPI 11 compatibility
+
+## [1.1.2] - 2025-09-30
+
+### Added
+
+- Added hours to Days zoom level
+
+### Fixed
+
+- Milestone sticker not visible
+- Fix CSS since `dhtmlx-gantt` update to `9.0`
+- Hide breadcrumb container in fullscreen mode with horizontal layout
+
+## [1.1.1] - 2024-07-09
+
+### Fixed
+
+- Adjusted code to ensure compatibility with updated library versions.
+
+## [1.1.0] - 2024-03-15
+
+### Added
+
+- Added the ability to export gantt view data in JSON format
+- Use real dates if they exist over planned dates for tasks and projects

@@ -1,0 +1,23 @@
+{
+  "name": "@glpi-plugins/glpi-gantt",
+  "description": "Add gantt view to GLPI projects.",
+  "private": true,
+  "license": "GPL-2.0-or-later",
+  "dependencies": {
+    "dhtmlx-gantt": "^10.0.3"
+  },
+  "scripts": {
+    "build": "webpack --config .webpack.config.js",
+    "postinstall": "npm run-script build",
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.5",
+    "file-loader": "^6.2.0",
+    "script-loader": "^0.7.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
+  }
+}

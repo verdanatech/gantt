@@ -1,0 +1,233 @@
+# English translations for PACKAGE package.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 04:16+0000\n"
+"PO-Revision-Date: 2026-09-16 04:16+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/view.html.twig
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+#: templates/view.html.twig
+msgid "Export"
+msgstr "Export"
+
+#: templates/view.html.twig
+msgid "JSON"
+msgstr "JSON"
+
+#: templates/view.html.twig
+msgid "Zoom"
+msgstr "Zoom"
+
+#: templates/view.html.twig
+msgid "Days"
+msgstr "Days"
+
+#: templates/view.html.twig
+msgid "Weeks"
+msgstr "Weeks"
+
+#: templates/view.html.twig
+msgid "Months"
+msgstr "Months"
+
+#: templates/view.html.twig
+msgid "Quarters"
+msgstr "Quarters"
+
+#: templates/view.html.twig
+msgid "Years"
+msgstr "Years"
+
+#: templates/view.html.twig
+msgid "Find"
+msgstr "Find"
+
+#: templates/view.html.twig
+msgid "Filter"
+msgstr "Filter"
+
+#: templates/view.html.twig
+msgid "by name"
+msgstr "by name"
+
+#: ajax/gantt.php:111
+msgid "Target item must be of project type"
+msgstr "Target item must be of project type"
+
+#: ajax/gantt.php:140
+msgid "Item must be of project type"
+msgstr "Item must be of project type"
+
+#: ajax/gantt.php:205 ajax/gantt.php:210 ajax/gantt.php:236 ajax/gantt.php:257
+#: src/TaskDAO.php:45 src/TaskDAO.php:57 src/TaskDAO.php:79 src/TaskDAO.php:98
+#: src/TaskDAO.php:124 src/ProjectDAO.php:45 src/ProjectDAO.php:55
+#: src/ProjectDAO.php:88 src/ProjectDAO.php:106
+msgid "Not enough rights"
+msgstr "Not enough rights"
+
+#: ajax/gantt.php:214
+msgid "Link already exist!"
+msgstr "Link already exist!"
+
+#: src/ProjectTab.php:41
+msgid "Gantt"
+msgstr "Gantt"
+
+#: src/ProjectTab.php:73 src/ProjectTab.php:75
+msgid "Global GANTT"
+msgstr "Global GANTT"
+
+#: public/js/gantt-helper.js:76
+msgid "Project"
+msgid_plural "Projects"
+msgstr[0] "Project"
+msgstr[1] "Projects"
+
+#: public/js/gantt-helper.js:77 public/js/gantt-helper.js:82
+msgid "Task"
+msgid_plural "Tasks"
+msgstr[0] "Task"
+msgstr[1] "Tasks"
+
+#: public/js/gantt-helper.js:78 public/js/gantt-helper.js:83
+msgid "Milestone"
+msgstr "Milestone"
+
+#: public/js/gantt-helper.js:87 public/js/gantt-helper.js:92
+#: public/js/gantt-helper.js:363
+msgid "New project"
+msgstr "New project"
+
+#: public/js/gantt-helper.js:181
+msgid "Today"
+msgstr "Today"
+
+#: public/js/gantt-helper.js:186
+msgid "Start date:"
+msgstr "Start date:"
+
+#: public/js/gantt-helper.js:188
+msgid "End date:"
+msgstr "End date:"
+
+#: public/js/gantt-helper.js:189
+msgid "Progress:"
+msgstr "Progress:"
+
+#: public/js/gantt-helper.js:191
+msgid "Description:"
+msgstr "Description:"
+
+#: public/js/gantt-helper.js:194
+msgid "Comment:"
+msgstr "Comment:"
+
+#: public/js/gantt-helper.js:201
+msgid "Project / Task"
+msgstr "Project / Task"
+
+#: public/js/gantt-helper.js:202
+msgid "Start date"
+msgstr "Start date"
+
+#: public/js/gantt-helper.js:203
+msgid "Duration"
+msgstr "Duration"
+
+#: public/js/gantt-helper.js:252
+#, javascript-format
+msgid "Week #%s"
+msgstr "Week #%s"
+
+#: public/js/gantt-helper.js:412
+msgid "Finish to Start: "
+msgstr "Finish to Start: "
+
+#: public/js/gantt-helper.js:415
+msgid "Finish to Finish: "
+msgstr "Finish to Finish: "
+
+#: public/js/gantt-helper.js:418
+msgid "Start to Start: "
+msgstr "Start to Start: "
+
+#: public/js/gantt-helper.js:421
+msgid "Start to Finish: "
+msgstr "Start to Finish: "
+
+#: public/js/gantt-helper.js:430
+msgid "Lag"
+msgstr "Lag"
+
+#: public/js/gantt-helper.js:433
+msgid "Save"
+msgstr "Save"
+
+#: public/js/gantt-helper.js:434
+msgid "Cancel"
+msgstr "Cancel"
+
+#: public/js/gantt-helper.js:435
+msgid "Delete"
+msgstr "Delete"
+
+#: public/js/gantt-helper.js:569
+msgid "Gantt mode: 'Readonly'"
+msgstr "Gantt mode: 'Readonly'"
+
+#: public/js/gantt-helper.js:647
+msgid "Links between projects cannot be created."
+msgstr "Links between projects cannot be created."
+
+#: public/js/gantt-helper.js:650
+msgid "Links between projects and tasks cannot be created."
+msgstr "Links between projects and tasks cannot be created."
+
+#: public/js/gantt-helper.js:653
+msgid "Target task can't start before source task ends."
+msgstr "Target task can't start before source task ends."
+
+#: public/js/gantt-helper.js:656
+msgid "Target task can't start before source task starts."
+msgstr "Target task can't start before source task starts."
+
+#: public/js/gantt-helper.js:659
+msgid "Target task can't end before source task ends."
+msgstr "Target task can't end before source task ends."
+
+#: public/js/gantt-helper.js:662
+msgid "Target task can't end before the source task starts."
+msgstr "Target task can't end before the source task starts."
+
+#: public/js/gantt-helper.js:695
+msgid "Could not create task: "
+msgstr "Could not create task: "
+
+#: public/js/gantt-helper.js:734 public/js/gantt-helper.js:767
+#, javascript-format
+msgid "Could not update Task[%s]: "
+msgstr "Could not update Task[%s]: "
+
+#: public/js/gantt-helper.js:859
+msgid "Could not create project: "
+msgstr "Could not create project: "
+
+#: public/js/gantt-helper.js:892
+#, javascript-format
+msgid "Could not update Project[%s]: "
+msgstr "Could not update Project[%s]: "
